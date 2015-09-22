@@ -21,6 +21,11 @@ au BufNewFile,BufRead *.go setlocal noet ts=4 sw=4 sts=4
 "Vim-go
 let g:go_fmt_command = "goimports"
 let mapleader=","
+let g:go_highlight_functions = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_structs = 1
+let g:go_highlight_operators = 1
+let g:go_highlight_build_constraints = 1
 au FileType go nmap <leader>gd <Plug>(go-doc)
 au FileType go nmap <leader>r <Plug>(go-run)
 au FileType go nmap <leader>b <Plug>(go-build)
