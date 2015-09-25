@@ -17,4 +17,4 @@ export PATH=$PATH:/usr/local/opt/go/libexec/bin
 export GOPATH=/Users/dennisme/Documents/Projects/go
 
 #Flush DNS
-alias flushdns='dscacheutil -flushcache'
+alias flushdns='sudo killall -HUP mDNSResponder'
